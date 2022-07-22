@@ -2,10 +2,10 @@ export default function json(bufferData) {
   return new Promise((resolve, reject) => {
     // эмуляция обработки ArrayBuffer
     setTimeout(() => {
-      let string = String.fromCharCode.apply(null, new Uint16Array(bufferData));
+      const string = String.fromCharCode.apply(null, new Uint16Array(bufferData));
       try {
-        let json = JSON.parse(string);
-        resolve(json);
+        const jsonStatham = JSON.parse(string);
+        resolve(jsonStatham);
       } catch (error) {
         reject(error);
       }
