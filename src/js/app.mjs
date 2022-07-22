@@ -37,6 +37,5 @@ GameSavingLoader.load().then(
   },
   (error) => {
     console.log(error);
-    // ...
   }
 );
